@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import AboutUs from "./Components/AboutUs";
 import Cards from "./Components/Cards";
 import Contact from "./Components/Contact";
@@ -10,9 +9,16 @@ import Navbar from "./Components/Navbar";
 import TeamCard from "./Components/TeamCard";
 import ContactFormModal from "./Components/ContactFormModal";
 import ServiceProvider from "./Components/serviceProviders";
+import "./App.css";
+import PreLoader from "./Components/Preloader";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return <PreLoader onFinish={() => setLoading(false)} />;
+  }
 
   return (
     <>
@@ -24,9 +30,9 @@ function App() {
       <Cards onBuyNowClick={() => setShowModal(true)} />
       {showModal && <ContactFormModal onClose={() => setShowModal(false)} />}
       <Contact />
-      <TeamCard/>
+      <TeamCard />
       <AboutUs />
-      <ServiceProvider/>
+      <ServiceProvider />
       <Footer />
     </>
   );

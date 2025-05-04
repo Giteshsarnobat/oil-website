@@ -17,7 +17,7 @@ const Cards = ({ onBuyNowClick }) => {
       description:
         "Cold-pressed and chemical-free, perfect for cooking and massages.",
       quantity: "500ml,1L, 2L, 5L,15L",
-      image: oilImg4,
+      image: oilImg6,
     },
     {
       title: "Premium Desi Ghee",

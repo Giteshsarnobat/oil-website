@@ -35,9 +35,9 @@ const ContactFormModal = ({ onClose }) => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const PUBLICKEY = "_YYKSgaDdqvbIStmn";
-  const SERVICEID = "service_de0edyo";
-  const TEMPLATEID = "template_hfolr7a";
+  const PUBLICKEY = "On1McyAiUux6SILvu"; 
+  const SERVICEID = "service_9lquofk"; 
+  const TEMPLATEID = "template_s8w7g0i";
 
   const sendEmail = (e) => {
     e.preventDefault();

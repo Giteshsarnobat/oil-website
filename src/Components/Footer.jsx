@@ -117,7 +117,7 @@ const Footer = () => {
             </li>
             <li>📞 +91 9324639058</li>
             <li>📞 +91 9554500006</li>
-            <li>✉️ mustardgold@email.com</li>
+            <li>✉️ Oilmaajagdamba@gmail.com</li>
           </ul>
         </div>
       </div>
